@@ -1,0 +1,39 @@
+﻿POST https://localhost:7052/topics
+Content-Type: application/json
+
+{
+  "name": "emails"
+}
+
+###
+
+GET https://localhost:7052/topics
+
+###
+
+POST https://localhost:7052/topics/4/messages
+Content-Type: application/json
+
+{
+  "topicMessage": "a lot of emails"
+}
+
+###
+
+POST https://localhost:7052/topics/4/subscriptions
+Content-Type: application/json
+
+{
+  "name": "AAC"
+}
+
+###
+
+GET https://localhost:7052/subscriptions/2/messages
+
+###
+
+POST https://localhost:7052/subscriptions/2/messages
+Content-Type: application/json
+
+[1]
